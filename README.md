@@ -4,6 +4,7 @@
 - [x] Download git and configure the git locally.
 - [x] Initialize the Repository.
 - [x] First Commit.
+- [x] Git logs. 
 
 
 ### Download git and configure the git locally.
@@ -51,4 +52,17 @@
    git reset --soft HEAD~1 # Uncommit the last one and keep changes in staging
    git reset --mixed HEAD~1 # Uncommit and unstage the last one
    git reset --hard HEAD~1 # Delete the last commit
+   ```
+### Git logs.
+1. See the git history
+   ```shell
+   git log # it will show the git activities
+
+   git log --oneline # it will show the git activities in onrline with short commit hash
+
+   git log --oneline --author=RP # It will show the commits made by the specific user.
+
+   git log --oneline --since="2024-12-01" # It will show the commits made after specific date time.
+
+   git diff 81de41 dec13e # Shows the difference between two commits.
    ```
