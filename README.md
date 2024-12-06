@@ -42,3 +42,13 @@
 
    git rest # Unstage all the files.
    ```
+3. Commit message
+   ```shell
+   git commit -m <short-commit-messge> # Commit changes with meaningful message
+   ```
+4. Reset last commit
+   ```shell
+   git reset --soft HEAD~1 # Uncommit the last one and keep changes in staging
+   git reset --mixed HEAD~1 # Uncommit and unstage the last one
+   git reset --hard HEAD~1 # Delete the last commit
+   ```
