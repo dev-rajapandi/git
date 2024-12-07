@@ -4,7 +4,8 @@
 - [x] Download git and configure the git locally.
 - [x] Initialize the Repository.
 - [x] First Commit.
-- [x] Git logs. 
+- [x] Git logs.
+- [x] Git Branches.
 
 
 ### Download git and configure the git locally.
@@ -65,4 +66,26 @@
    git log --oneline --since="2024-12-01" # It will show the commits made after specific date time.
 
    git diff 81de41 dec13e # Shows the difference between two commits.
+   ```
+
+### Git Branches
+1. Create a new branch.
+   ```shell
+   git branch new_branch
+   ```
+2. Switch to new branch.
+   ```shell
+   git checkout new_branch
+   ```
+3. Switch to master branch. (Both were same)
+   ```shell
+   git checkout master
+         or
+   git swith master
+   ```
+4. Create and switch to new branch in single comment.
+   ```shell
+   git checkout -b new_branch_2
+            or
+   git switch -c new_branch_3
    ```
